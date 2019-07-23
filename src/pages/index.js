@@ -6,7 +6,10 @@ export default function Index() {
   return (
     <div>
       <h1>Hi people</h1>
-      <p>This is an example site integrating Netlify’s form handling with Gatsby</p>
+      <p>
+        This is an example site integrating Netlify’s form handling with Gatsby. You can{' '}
+        <a href="https://github.com/sw-yx/gatsby-netlify-form-example-v2">view source here</a>.
+      </p>
       <ul>
         <li>
           <Link to="/contact/">Basic contact form</Link>
