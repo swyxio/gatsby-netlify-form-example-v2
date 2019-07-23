@@ -2,8 +2,8 @@ import React from 'react'
 import { Link } from 'gatsby'
 import { Helmet } from 'react-helmet'
 
-import '../css/typography.css'
-import '../css/styles.css'
+import './css/typography.css'
+import './css/styles.css'
 
 export default function Template({ children }) {
   return (
@@ -33,7 +33,7 @@ export default function Template({ children }) {
                 textDecoration: 'none',
               }}
             >
-              Gatsby
+              Gatsby + Netlify Forms
             </Link>
           </h1>
         </div>
@@ -46,7 +46,7 @@ export default function Template({ children }) {
           paddingTop: 0,
         }}
       >
-        {children()}
+        {children}
       </div>
     </div>
   )
