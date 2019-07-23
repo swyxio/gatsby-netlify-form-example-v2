@@ -1,6 +1,7 @@
 import React from 'react'
 import { navigate } from 'gatsby'
 import Recaptcha from 'react-google-recaptcha'
+import Layout from '../layout'
 
 const RECAPTCHA_KEY = process.env.SITE_RECAPTCHA_KEY
 
@@ -37,7 +38,7 @@ export default function Contact() {
   }
 
   return (
-    <div>
+    <Layout>
       <h1>reCAPTCHA 2</h1>
       <form
         name="contact-recaptcha"
@@ -76,6 +77,6 @@ export default function Contact() {
           <button type="submit">Send</button>
         </p>
       </form>
-    </div>
+    </Layout>
   )
 }

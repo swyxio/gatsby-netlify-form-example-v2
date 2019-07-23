@@ -1,5 +1,6 @@
 import React from 'react'
 import { navigateTo } from 'gatsby-link'
+import Layout from '../layout'
 
 function encode(data) {
   return Object.keys(data)
@@ -30,7 +31,7 @@ export default function Contact() {
   }
 
   return (
-    <div>
+    <Layout>
       <h1>Contact</h1>
       <form
         name="contact"
@@ -72,6 +73,6 @@ export default function Contact() {
           <button type="submit">Send</button>
         </p>
       </form>
-    </div>
+    </Layout>
   )
 }

@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import { Helmet } from 'react-helmet'
-
+import Layout from '../layout'
 export default function Index() {
   return (
-    <div>
+    <Layout>
       <h1>Hi people</h1>
       <p>
         This is an example site integrating Netlify’s form handling with Gatsby. You can{' '}
@@ -28,6 +28,6 @@ export default function Index() {
           .
         </li>
       </ul>
-    </div>
+    </Layout>
   )
 }

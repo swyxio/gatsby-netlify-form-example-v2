@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 import { navigateTo } from 'gatsby-link'
+import Layout from '../layout'
 
 function encode(data) {
   const formData = new FormData()
@@ -39,7 +40,7 @@ export default function Contact() {
   }
 
   return (
-    <div>
+    <Layout>
       <h1>File Upload</h1>
       <form
         name="file-upload"
@@ -75,6 +76,6 @@ export default function Contact() {
         </p>
         <p>Note: multiple file uploads are not supported by Netlify at this time.</p>
       </form>
-    </div>
+    </Layout>
   )
 }
