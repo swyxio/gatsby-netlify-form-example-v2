@@ -2,7 +2,7 @@
 [build]
   command = "yarn run build"
   functions = "functions"
-  publish = "dist"
+  publish = "public"
 
 # [dev] # https://github.com/netlify/netlify-dev-plugin#project-detection
 #   command = "yarn start" # Command to start your dev server
