@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 import { Helmet } from 'react-helmet'
 
 import '../css/typography.css'
+import '../css/styles.css'
 
 export default function Template({ children }) {
   return (

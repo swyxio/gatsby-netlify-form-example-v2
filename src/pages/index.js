@@ -17,6 +17,13 @@ export default function Index() {
         <li>
           <Link to="/recaptcha/">Form with reCAPTCHA 2</Link>
         </li>
+        <li>
+          You can also{' '}
+          <a href="https://github.com/snipcart/gatsby-netlify-serverless/blob/master/functions/fetchreviews.js#L23">
+            programmatically retrieve data
+          </a>
+          .
+        </li>
       </ul>
     </div>
   )
