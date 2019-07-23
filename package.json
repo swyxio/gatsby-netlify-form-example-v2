@@ -6,8 +6,11 @@
   "dependencies": {
     "gatsby": "^2.13.35",
     "gatsby-plugin-react-helmet": "^3.1.2",
+    "react": "^16.8.6",
     "react-async-script": "^0.9.1",
-    "react-google-recaptcha": "^0.11.1"
+    "react-dom": "^16.8.6",
+    "react-google-recaptcha": "^0.11.1",
+    "react-helmet": "^5.2.1"
   },
   "devDependencies": {
     "dotenv": "^5.0.1"
