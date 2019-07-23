@@ -1,5 +1,5 @@
 import React from 'react'
-import { navigateTo } from 'gatsby-link'
+import { navigate } from 'gatsby-link'
 import Layout from '../layout'
 
 function encode(data) {
@@ -26,7 +26,7 @@ export default function Contact() {
         ...state,
       }),
     })
-      .then(() => navigateTo(form.getAttribute('action')))
+      .then(() => navigate(form.getAttribute('action')))
       .catch((error) => alert(error))
   }
 
