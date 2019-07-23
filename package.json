@@ -1,18 +1,16 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "gatsby-netlify-form-example",
+  "description": "Gatsby Netlify Form example",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "swyx <swyx@dontemail.me>",
   "dependencies": {
-    "gatsby": "^1.9.261",
-    "gatsby-link": "^1.0.1",
-    "gatsby-plugin-react-helmet": "^1.0.1",
+    "gatsby": "^2.13.35",
+    "gatsby-plugin-react-helmet": "^3.1.2",
     "react-async-script": "^0.9.1",
     "react-google-recaptcha": "^0.11.1"
   },
   "devDependencies": {
-    "dotenv": "^5.0.1",
-    "gh-pages": "^0.12.0"
+    "dotenv": "^5.0.1"
   },
   "keywords": [
     "gatsby"
@@ -21,7 +19,6 @@
   "main": "n/a",
   "scripts": {
     "build": "gatsby build",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "develop": "gatsby develop",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"pages/*.js\" \"utils/*.js\" \"wrappers/*.js\" \"html.js\"",
     "test": "echo \"Error: no test specified\" && exit 1"
