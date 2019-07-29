@@ -4,6 +4,8 @@ Example for integrating a basic contact form with Netlify’s form handling feat
 
 Demo: https://gatsby-netlify-form-example-v2.netlify.com/
 
+Note: You can also find a [Gatsby + Netlify Forms example in the Gatsby+NetlifyCMS starter](https://gatsby-netlify-cms.netlify.com/contact/examples).
+
 Features:
 
 - Basic form submission
