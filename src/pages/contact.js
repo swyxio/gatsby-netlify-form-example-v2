@@ -12,7 +12,7 @@ export default function Contact() {
   const [state, setState] = React.useState({})
 
   const handleChange = (e) => {
-    setState({ [e.target.name]: e.target.value })
+    setState({ ...state, [e.target.name]: e.target.value })
   }
 
   const handleSubmit = (e) => {
