@@ -13,23 +13,22 @@ function encode(data) {
 
 export default function Contact() {
   const [state, setState] = React.useState({})
+  const recaptchaRef = React.createRef()
 
   const handleChange = (e) => {
-    setState({ [e.target.name]: e.target.value })
-  }
-
-  const handleRecaptcha = (value) => {
-    setState({ 'g-recaptcha-response': value })
+    setState({ ...state, [e.target.name]: e.target.value })
   }
 
   const handleSubmit = (e) => {
     e.preventDefault()
     const form = e.target
+    const recaptchaValue = recaptchaRef.current.getValue()
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({
         'form-name': form.getAttribute('name'),
+        'g-recaptcha-response': recaptchaValue,
         ...state,
       }),
     })
@@ -72,7 +71,7 @@ export default function Contact() {
             <textarea name="message" onChange={handleChange} />
           </label>
         </p>
-        <Recaptcha ref="recaptcha" sitekey={RECAPTCHA_KEY} onChange={handleRecaptcha} />
+        <Recaptcha ref={recaptchaRef} sitekey={RECAPTCHA_KEY} />
         <p>
           <button type="submit">Send</button>
         </p>

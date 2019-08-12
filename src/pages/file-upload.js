@@ -1,6 +1,4 @@
 import React from 'react'
-import Link from 'gatsby-link'
-import Helmet from 'react-helmet'
 import { navigate } from 'gatsby-link'
 import Layout from '../layout'
 
@@ -18,11 +16,11 @@ export default function Contact() {
   const [state, setState] = React.useState({})
 
   const handleChange = (e) => {
-    setState({ [e.target.name]: e.target.value })
+    setState({ ...state, [e.target.name]: e.target.value })
   }
 
   const handleAttachment = (e) => {
-    setState({ [e.target.name]: e.target.files[0] })
+    setState({ ...state, [e.target.name]: e.target.files[0] })
   }
 
   const handleSubmit = (e) => {
