@@ -1,3 +1,5 @@
+## optional config to try this out in gitpod
+## feel free to delete
 ports:
 - port: 8000
   onOpen: open-preview
