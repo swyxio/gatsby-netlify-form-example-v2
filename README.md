@@ -20,7 +20,7 @@ More information in the blogpost: https://www.netlify.com/blog/2017/07/20/how-to
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/sw-yx/gatsby-netlify-form-example-v2)
 
-## Start Coding
+## Try it out in Gitpod
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/from-referrer/)
 
