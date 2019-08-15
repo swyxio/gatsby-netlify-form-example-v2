@@ -40,7 +40,7 @@ export default function Contact() {
   return (
     <Layout>
       <h1>
-        File Upload using <pre>multipart/form-data</pre>
+        File Upload using <code>multipart/form-data</code>
       </h1>
       <form
         name="file-upload"

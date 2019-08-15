@@ -17,6 +17,9 @@ export default function Index() {
           <Link to="/file-upload/">Form with file upload</Link>
         </li>
         <li>
+          <Link to="/multipart-file-upload/">Form with multipart file upload</Link>
+        </li>
+        <li>
           <Link to="/recaptcha/">Form with reCAPTCHA 2</Link>
         </li>
         <li>
