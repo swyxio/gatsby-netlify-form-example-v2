@@ -3,7 +3,7 @@ import { navigate } from 'gatsby'
 import Recaptcha from 'react-google-recaptcha'
 import Layout from '../layout'
 
-const RECAPTCHA_KEY = process.env.SITE_RECAPTCHA_KEY
+const RECAPTCHA_KEY = process.env.GATSBY_APP_SITE_RECAPTCHA_KEY
 
 function encode(data) {
   return Object.keys(data)
