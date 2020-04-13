@@ -39,6 +39,10 @@ To make the reCAPTCHA example work in your own copy of this site, you’ll need 
 
 **Important**: the environment variables need to be called `SITE_RECAPTCHA_KEY` and `SITE_RECAPTCHA_SECRET` for the Netlify backend to find them. If you add a `GATSBY_` prefix to the variable names, the Netlify backend won't recognize them, the reCAPTCHA verification will fail, and your form submissions won't be stored.
 
+If you still need the key on the frontend, like shown in this demo, you can simply duplicate the key:
+
+![image](https://user-images.githubusercontent.com/6764957/79165052-e8e52b00-7e14-11ea-851f-55ae51e6f1f6.png)
+
 3. Change the build command for your site to
 
 ```
