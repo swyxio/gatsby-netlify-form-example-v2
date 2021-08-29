@@ -1,3 +1,5 @@
+> Note: I no longer work at Netlify - if you'd like to maintain this example repo, please get in touch and I'd be happy to transfer.
+
 # Integrating Netlify Form Handling in Gatsby
 
 Example for integrating a basic contact form with Netlify’s form handling feature.
@@ -23,6 +25,14 @@ More information in the blogpost: https://www.netlify.com/blog/2017/07/20/how-to
 ## Try it out in Gitpod
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/from-referrer/)
+
+## How it Looks on Netlify app
+
+![CleanShot 2021-08-29 at 16 40 57](https://user-images.githubusercontent.com/6764957/131269107-3272201f-9c68-4328-869d-a02330bffc8b.png)
+
+
+![CleanShot 2021-08-29 at 16 41 17](https://user-images.githubusercontent.com/6764957/131269117-7538b676-fb41-44e6-af74-0d67f56afecb.png)
+
 
 ## reCAPTCHA
 
