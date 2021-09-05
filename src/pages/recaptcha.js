@@ -22,6 +22,16 @@ function encode(data) {
 export default function Contact() {
   const [state, setState] = React.useState({})
   const recaptchaRef = React.createRef()
+  var recaptchaComplete = false
+
+  function onChange(value) {
+    // console.log("Captcha value:", value);
+    if (value === null) {
+      recaptchaComplete = false
+    } else {
+      recaptchaComplete = true
+    }
+  }
 
   const handleChange = (e) => {
     setState({ ...state, [e.target.name]: e.target.value })
@@ -31,6 +41,7 @@ export default function Contact() {
     e.preventDefault()
     const form = e.target
     const recaptchaValue = recaptchaRef.current.getValue()
+    if (recaptchaComplete) {
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -42,6 +53,9 @@ export default function Contact() {
     })
       .then(() => navigate(form.getAttribute('action')))
       .catch((error) => alert(error))
+      } else {
+      alert("Please complete the Recaptcha")
+     }
   }
 
   return (
@@ -79,7 +93,7 @@ export default function Contact() {
             <textarea name="message" onChange={handleChange} />
           </label>
         </p>
-        <Recaptcha ref={recaptchaRef} sitekey={RECAPTCHA_KEY} />
+        <Recaptcha ref={recaptchaRef} sitekey={RECAPTCHA_KEY} onChange={onChange} />
         <p>
           <button type="submit">Send</button>
         </p>
