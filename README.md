@@ -59,7 +59,11 @@ If you still need the key on the frontend, like shown in this demo, you can simp
 echo SITE_RECAPTCHA_KEY=$SITE_RECAPTCHA_KEY >> .env.production && gatsby build
 ```
 
+
+
 This will make the SITE_RECAPTCHA_KEY available to the Gatsby build in production.
 
 To see the reCAPTCHA widget locally, add `SITE_RECAPTCHA_KEY=your-reCAPTCHA-API-site-key`
 to your local [.env.development](https://www.gatsbyjs.org/docs/environment-variables/) file.
+
+[create a static website with contact form on github pages](https://fabform.io/a/create-a-static-website-with-contact-form-on-github-pages)
